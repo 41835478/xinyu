@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* 初始化 begin */
+html{width: 100%; height: 100%;font-size:100px}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, textarea, p, blockquote{margin: 0; padding: 0;}
+body{font-family: Microsoft Yahei, '微软雅黑',Arial, Helvetica, sans-serif; font-size: 16px; color:#fff;width: 100%; padding: 0; margin: 0; background-color: #f7f7f7;}
+table{border-collapse: collapse; border-spacing: 0; font-size: inherit; font: 100%;}
+/*::-webkit-scrollbar{width:100px}*/
+input, img{vertical-align: middle}
+a{text-decoration: none; /*cursor:pointer;*//*a链接手势*/}
+a:link, a:visited, a:active, a:hover{text-decoration: none; color: #fff;}
+fieldset, img{border: 0;}
+address, caption, cite, code, dfn, em, strong, th, var{font-style: normal; font-weight: normal;}
+caption, th{text-align: left;}
+h1, h2, h3, h4, h5, h6{font-size: 100%; font-weight: normal;}
+q:before, q:after{content: '';}
+input, textarea, select{font-family: inherit; font-size: inherit; font-weight: inherit;}
+input[type="text"], input[type="password"], input[type="number"], input[type="button"]{-webkit-appearance: none;-moz-appearance: none; /* mobile firefox too! */}
+li{list-style: none;}
+i{font-style:normal;} 
+img, object{max-width: 100%;}
+.clearfixd:after{content: '\20'; display: block; height: 0; clear: both;}
+.clearfixd{*zoom:1; overflow:hidden;}
+.hide{display:none;}
+.nomarginleft{margin-left:0}
+input:focus,select:focus{outline:none;}
+/* 初始化 end */
+/* 网页加载 begin */
+#loading{position:fixed;z-index:98;top:0;left:0;right:0;bottom:0;background-color:#fff;}
+#loading #status{position:fixed;z-index:98;width:250px;height:250px;position:absolute;left:50%;top:50%;background-size:32px 32px;margin-top: -125px;margin-right: 0;margin-bottom: 0;margin-left: -115px;}
+#loading #status p{top:70%;}
+#loading .center-text{text-align:center;background-image: url(https://cdn.alqwang.com/mobile/images/loading.jpg);background-repeat: no-repeat;background-position: center top;height: 182px;width: 234px;}
+#loading .center-text span{font-size: 14px;color: #999;position: relative;top: 170px;}
+/*网页加载 end*/
+
+/* 公共begin */
+.clear{ clear:both} 
+.b_white{background-color:#fff;}
+.line1 {height: 0.1rem;background-color:#f7f7f7;}
+/* 公共end */
+#header,#footer{overflow:hidden;text-align:center;width:100%;margin:0 auto;z-index:999;position:fixed;}
+#header{top:0;}
+#header_content{width:100%;background:#fc376c;max-width:6.4rem;min-width:320px;margin:0 auto;position:relative;height:0.88rem;font-size:0.32rem;border-bottom:1px solid #d18690;line-height:0.88rem;}
+#header_content .left,#header_content .right{position:absolute;top: 0.24rem;}
+#header_content .left{float:left;left: 0.18rem;}
+#header_content .right{float:right;right: 0.18rem;}
+#footer{bottom:0;}
+#footer_content{width:100%;background:#d91d37;max-width:6.4rem;min-width:320px;margin:0 auto;position:relative;height:0.88rem;font-size:0.32rem;}
+
+#footer_content{position:relative;height:0.8rem;border-top: 0.1em solid #f0f0f0;background-color:#fff;-moz-box-shadow:0px -1px 20px #999999; -webkit-box-shadow:0px -1px 20px #999999; box-shadow:0px -1px 20px #999999;}
+#footer_content>a{width:20%;float:left;height:0.8rem;color:#666;}
+#footer_content li{font-size:0.46rem;}
+#footer_content p{text-align:center;font-size:0.2rem;line-height:0.24rem;color:#333;}
+#footer_content a.active{color:#ee5351;}
+#footer_content a.active p{color:#ee5351;}
+/*#content{overflow:hidden;width:100%;margin:0 auto;z-index:999;margin-top:0.88rem;margin-bottom:0.88rem;}*/
+#content {width: 100%;max-width: 640px;min-width: 320px;margin: 0 auto;margin-top: 0.88rem;margin-bottom: 0.88rem;background: #f7f7f7;overflow: hidden;min-height: 8rem;
+}
+#content_content{position:relative;margin:0 auto;}
+/*#content_content{min-height:100rem;}*/
+#gotopbox{position: fixed;height:0.8rem;width:0.8rem;bottom: 1.2rem;right: 0.4rem;display: none;z-index: 999;background-color:#fff;border-radius:100%;-moz-box-shadow:2px 2px 20px #666; -webkit-box-shadow:2px 2px 20px #666; box-shadow:2px 2px 20px #666;}
+#gotop{position: relative;height: 0.8rem;width: 0.8rem;color:#666;font-size:0.6rem;line-height:0.8rem;text-align:center;margin-top:-0.06rem;}
+.class_left{float:left;width:1.78rem;}
+.class_right{float:left;width:4.6rem;background-color:#fff;color:#666;}
+.class_left aside{width:1.78rem;color:#666;text-align:center;background-color:#f6f6f9;}
+.class_left aside li{font-size:0.3rem;width:1.78rem;height:0.8rem; line-height:0.8rem;}
+.class_left aside li.active{box-sizing:border-box;background-color:#fff;border-left:2px solid #f86b0b;}
+.class_right section{display:none;}
+#content section.active{display:block;}
+.class_right section.active h5{line-height:0.4rem;padding-left:0.4rem;padding-top:0.2rem;}
+.class_right section.active a li{float:left;width:1.52rem;height:1.52rem;}
+.class_right section.active a li img{width:1rem;padding:0 0.26rem;margin-top:0.2rem;}
+.class_right section.active a li p{text-align:center;color:#666;line-height:0.3rem;font-size:0.22rem;}
+#index_hb{overflow: hidden;margin:0 auto;position:relative;width:6.4rem;height:2.25rem;}
+#index_hb img{float:left;width:6.4rem;height:6.4rem;}
+#index_hb ul{position:absolute;}
+#index_hb_i{position:absolute;bottom:0.2rem;right:0.2rem;font-size:0.2rem;color:#ccc;}
+.index_hb_i{margin:0 4px;}
+
+#index_cat{background-color:#fff;height:2.6rem;clear:both;}
+#index_cat a{width: 25%; float: left; margin: 0.1rem auto 0 auto; text-align: center; display: list-item;}
+#index_cat img{width:0.7rem;height:0.7rem;padding:0 0.45rem;}
+#index_cat i{text-align:center; display: inline-block; width:0.8rem; height:0.8rem;background: url(https://cdn.alqwang.com/mobile/images/icons.png) no-repeat;background-size: 6.4rem 0.8rem;}
+#index_cat p{font-size: 0.22rem; line-height: 0.32rem; color: #666; text-align: center;}
+#index_cat i.home01{background-position: 0 0;}
+#index_cat i.home02{background-position: -0.8rem 0;}
+#index_cat i.home03{background-position: -1.6rem 0;}
+#index_cat i.home04{background-position: -2.4rem 0;}
+#index_cat i.home05{background-position: -3.2rem 0;}
+#index_cat i.home06{background-position: -4rem 0;}
+#index_cat i.home07{background-position: -4.8rem 0;}
+#index_cat i.home08{background-position: -5.6rem 0;}
+#index_tab{border-top: 1px solid #eaeaea;border-bottom: 0.04rem solid #eaeaea;margin-top: 0.16rem;height: 0.7rem;z-index: 99;width: 100%;background: #fff;max-width: 6.4rem;}
+#index_tab a{display: inline-block;width: 2.1rem;margin: 0 auto;text-align: center;color: #666;height: 0.7rem;line-height: 0.7rem;border-bottom: 0.04rem solid #eaeaea;}
+#index_tab a span{display: inline-block;font-size: 0.26rem;min-width: 1.08rem;height: 0.66rem;line-height: 0.7rem;color: #666;}
+#index_tab a.active span{color: #d91d37;box-sizing:border-box;border-bottom: 0.04rem solid #d91d37;}
+/*商品列表组件begin*/
+#item{overflow:hidden;padding: 0 0.08rem;}
+#item .item{background-color: #fff;float: left;margin-top: 0.08rem;width: 3.08rem;position: relative;}
+#item .item:nth-of-type(odd){float:left;}
+#item .item:nth-of-type(even){float:right;}
+#item .item .cons div{padding-bottom:0.1rem;}
+#item .item li{margin: 0 auto;height: 3.2rem;text-align: center;}
+#item .item li img{background:url(https://cdn.alqwang.com/mobile/images/loading.gif) no-repeat;background-size: 3.0rem 3.0rem;margin-top: 0.13rem;width: 3.0rem;height: 3.0rem;
+}
+#item .item dl{padding: 0 0.1rem;}
+#item.item dl div{float: left;}
+#item .item dl div.title{height: 0.36rem;
+    text-align: center;
+    line-height: 0.36rem;
+    max-height: 0.36rem;
+    overflow: hidden;
+    font-size: 0.2rem;
+    color: #777;}
+#item .item dl div.introduce{text-align: left;
+    line-height: 0.36rem;
+    font-size: 0.16rem;
+    color: #ccc;}
+.item dl div i{color:red;}
+.cons div:nth-of-type(odd){float:left;text-align:left !important;}
+.cons div:nth-of-type(even){float:right;text-align:right !important;}
+.cons div{display: inline-block !important;color: #a3a3a3;font-size: 0.2rem;height:0.5rem;line-height:0.5rem;}
+/*商品列表组件end*/
+.pullup-goods{width: 100%;height: 0.8rem;background-color: #fff;color: #666;text-align: center;line-height: 0.8rem;margin-top: 0.13rem;}
+.item_header{
+    overflow:hidden;
+    line-height: 0.5rem;
+    text-align:center;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.15rem;
+    background-color: rgba(102,102,102,0.7);
+    border-radius: 100%;
+}
+.item_header i{position:relative;}
+#item_desctime{height:0.85rem;width:6.4rem;background:url(../images/item_desctime.jpg) no-repeat;background-size: 6.4rem 0.85rem;background-position: 0 0;}
+#item_desctime div{height:0.85rem;float:left;}
+#item_desc_time_left{width:4.26rem;}
+#item_desc_time_right{width:2.14rem;}
+#item_desc_time_right>div{float:left;width:0.32rem;height:0.36rem;margin-top:0.46rem;margin-left:0.07rem;font-size:0.26rem;text-align:center;line-height:0.36rem;overflow:hidden;}
+#item_desc_time_hour{margin-left:0.42rem!important;}
+#item_desc_time_minute{}
+#item_desc_time_second{}
+#item_desc_time_msec{}
+#item_quan_old_price{margin-right:0.1rem;}
+#item_old_price_sales{color:#ddd;}
+#item_old_price_sales>div{float:none;height:0.4rem;font-size:0.26rem;line-height:0.4rem;}
+#item_sales_text{overflow:hidden;background-color:#f55;float:none;height:0.3rem;font-size:0.26rem;line-height:0.3rem;padding:0.02rem 0.08rem;border-radius:3px;text-align:center;}
+#item_quan_old_price big{margin-left: 0.1rem;font-size: 0.4rem;line-height: 0.65rem;color: #fff;}
+#item_quan_old_price span{margin-top:0.1rem;font-size: 0.6rem;display: inline-block;height: 0.75rem;color: #fff;}
+
+.titles{background-color: #fff;position: relative;padding: 6px;color:#666;}
+
+.title{color:#666;font-size:16px;}
+#item_title{color:#666;font-size:16px;}
+#itempj{padding: 6px;background-color: #fff;color: #666;}
+#itempj_user_nick{margin: 6px;padding-top: 6px;}
+#itempj_nick{font-size: 18px;padding: 0 0 0 6px;}
+#itempj_pj{margin: 6px;font-size: 14px;line-height: 20px;}
+#itempj_title{text-align: center;padding-bottom: 6px;border-bottom: 1px solid #eee;}
+#itempj img{width: 24px;margin-top: -2px;border-radius: 100%;}
+#itempj_date{margin: 6px;font-size: 12px;color: #ccc;}
+#itempj_gdpj{text-align: center;margin: 4px 0;}
+#itempj_gdpj span{padding: 0 6px 2px 6px;border: 1px solid #d91d37;border-radius: 16px;}
+#itempj_gdpj span a{color: #d91d37;}
+#item_fuwu{padding: 6px;background-color: #fff;font-size: 14px;color: #666;}
+.dian{overflow: auto;background-color: #fff;font-size: 16px;color: #666;}
+.dian_detail{margin: 6px;width: 50%;float: left;border-right: 2px solid #eee;}
+.dian_logo, .dian_title{margin-top: 6px;}
+.dian_title{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.tboftm{background: url(https://cdn.alqwang.com/mobile/images/tboftm.png) no-repeat;background-size: 272px 16px;display: inline-block;}
+.tm{width: 116px;height: 16px;background-position: 0 0;}
+.tb{width: 156px;height: 16px;background-position: -118px 0;}
+.upofdown{width: 10px;height: 11px;background: url(https://cdn.alqwang.com/mobile/images/upofdown.png) no-repeat;background-size: 20px 11px;display: inline-block;margin-left: 10px;}
+span.up{color: #e13e4c;}
+span.down {color: #00b78b;}
+.down{background-position: 0 0;}
+.up{background-position: -10px 0;}
+.loading_img img{width:100%}
+#details{display:none;background-color:#fff;padding:6px 6px 12px 6px;overflow:auto;}
+#detail{padding:6px;background-color:#fff;color:#666;text-align:left;}
+#detail_data{padding: 12px 6px;}
+#detail_tab{border-bottom:1px solid #eee;font-size:16px;height:30px;width:100%;color:#666;padding:2px;-moz-box-sizing:border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing:border-box;}
+#detail_tab li{float:left;width:50%;text-align:center;}
+#detail_tab li span.active{color:#d91d37;border-bottom:2px solid #d91d37;}
+
+#props{padding:12px 6px;color:#666;display:none;}
+#props li{overflow:auto;width:100%;-moz-box-sizing:border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing:border-box;border-bottom:2px solid #eee;padding:12px 0;}
+#props li span{float:left;}
+#props li span:nth-of-type(odd){color:#000;width:30%;}
+#props li span:nth-of-type(even){width:70%;}
+.ins{color:#666;padding:10px;background-color:#fff;font-size:16px;}
+.itemtj{background-color:#fff;font-size:16px;color:#666;text-align:center;margin-bottom:-0.06rem;height:22px;line-height:22px;padding:6px;}
+#fromawg_totb{z-index:999999999;background-color:#fff;width:300px;height:100px;position:fixed;border-radius:20px;-moz-box-shadow:2px 2px 20px #9E9E9E; -webkit-box-shadow:2px 2px 20px #9E9E9E; box-shadow:2px 2px 20px #9E9E9E;display:none;}
+#fromawg_totb_logos{margin:10px 45px;}
+#fromawg_totb_logo{border-radius:20px 20px 0 0;height:60px;background: -moz-linear-gradient(left, #f1376c, #f96); background: -webkit-gradient(linear,left,from(#f1376c),to(#f96));background: -webkit-linear-gradient(left, #f1376c, #f96);background: -o-linear-gradient(left, #f1376c, #f96);}
+#fromawg_totb_logo div{float:left;padding:0 5px;}
+#fromawg_totb_logo div li{height:40px;}
+#fromawg_totb_logo div li img{height:100%;}
+#fromawg_totb_title{padding:10px 50px;height:20px;text-align:center;color:#666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;}
+#footer_content i{float:left;color:#fff;line-height:0.8rem;text-align:center;}
+#footer_content i.favorite,#footer_content i.fabulous{color:#666;font-size:0.3rem;}
+#footer_content i.active{color:#ff2f49;}
+#footer_content i.fabulous{width:1.28rem;}
+#footer_content i.favorite{width:1.28rem;}
+#footer_content i.copy{color:#fff;width:1.92rem;background-color:#fdbf14;}
+#footer_content i.buy{color:#fff;width:1.92rem;background-color:#ff2f49;}
+.tbc,.tmc{border-radius:3px;color:#fff;}
+.tbc{background-color:#f00;}
+.tmc{background-color:#f00;}
+div.titles{background-color: #fff;position: relative;padding:6px;}
+div.title{font-weight: normal;color:#666;font-size:16px;}
+div.titles h2 {font-size: 16px;color:#fff;margin:10px 0 5px 0;}
+div.titles span {font-size:14px;color:#fff;padding:0 2px;margin-top:6px;}
+div.titles span.quan{background: #FF0042;margin-right:6px}
+div.titles span.sales{background: #ff4c00;margin-right:6px}
+div.titles span.kuaidi{background: #aa4c8f;margin-right:6px}
+div.titles span.fahuo{background: #0eb83a;}
+
+div.menus{display:none;}
+div.active.menus{display:block;width:2.5rem;background-color:#fff;position:fixed;top:0.88rem;right:0;z-index:10;-moz-box-shadow:-4px 4px 20px #949494; -webkit-box-shadow:-4px 4px 20px #949494; box-shadow:-4px 4px 20px #949494;}
+div.active.menus>a li{text-align:center;color:#666;width:2.5rem;height:0.8rem;border-bottom: 0.02rem solid #eee;line-height:0.8rem;}
+#line{position:absolute;top:400px;}
+#search_form{line-height:0.88rem;}
+.serach-text {
+
+    width: 4.6rem;
+    height: 0.4rem;
+    border-radius: 0.1rem;
+    background: #fff;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    color: #666;
+    padding: 0.08rem;
+    font-size: 0.2rem;
+}
+/*商品筛选组件begin*/
+.tabs{width:100%;max-width:6.4rem;background-color:#fff;height:0.6rem;border-bottom:0.04rem solid #eaeaea;z-index:999;}
+.tabs a li{color:#666;width:1.6rem;float:left;text-align:center;line-height:0.6rem;}
+.tabs a span{position:relative;left:0.04rem;}
+.tabs a.active li span.active{color:#666;}
+.tabs a.active li{border-bottom:0.04rem solid #d91d37;color:#d91d37;}
+/*商品筛选组件end*/
+.serach-kw {
+    max-width: 2rem;
+    position: absolute;
+    right: 0.88rem;
+    top: 0;
+    color: #666;
+    font-size: 0.18rem;
+}
+#bottom {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 999;
+    position: fixed;
+    bottom: 1.3rem;
+    width: 50%;
+    max-width: 3rem;
+    margin: 0 1.7rem;
+}
+#bottom div.bcons {
+    position: relative;
+    margin: 0 auto;
+    height: 0.3rem;
+    background-color: #333;
+    color: #fff;
+    line-height: 0.3rem;
+    border-radius: 0.3rem;
+    max-width: 1.4rem;
+}
+.today-wrapper {
+    position: absolute;
+    z-index: 10;
+    font-size: 10px;
+    text-align: center;
+    background-color: #e53563;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    color: #fff;
+    float: right;
+    right: 0;
+    padding: 0px 5px;
+    margin:0.13rem 0;
+    font-family: "Microsoft Yahei";
+}
