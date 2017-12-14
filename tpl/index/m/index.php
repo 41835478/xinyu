@@ -1,1 +1,1 @@
-/*欢迎使用*/
+<?php include($tpl.INCLUDES.'header'.PHP);?>
