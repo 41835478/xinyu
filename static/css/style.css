@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* 初始化 begin */
+html{width: 100%; height: 100%;font-size:100px}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, textarea, p, blockquote{margin: 0; padding: 0;}
+body{font-family: Microsoft Yahei, '微软雅黑',Arial, Helvetica, sans-serif; font-size: 16px; width: 100%; padding: 0; margin: 0;}
+table{border-collapse: collapse; border-spacing: 0; font-size: inherit; font: 100%;}
+/*::-webkit-scrollbar{width:100px}*/
+input, img{vertical-align: middle}
+a{text-decoration: none; /*cursor:pointer;*//*a链接手势*/}
+a:link, a:visited, a:active, a:hover{text-decoration: none;}
+fieldset, img{border: 0;}
+address, caption, cite, code, dfn, em, strong, th, var{font-style: normal; font-weight: normal;}
+caption, th{text-align: left;}
+h1, h2, h3, h4, h5, h6{font-size: 100%; font-weight: normal;}
+q:before, q:after{content: '';}
+input, textarea, select{font-family: inherit; font-size: inherit; font-weight: inherit;}
+input[type="text"], input[type="password"], input[type="number"], input[type="button"]{-webkit-appearance: none;-moz-appearance: none; /* mobile firefox too! */}
+li{list-style: none;}
+i{font-style:normal;} 
+img, object{max-width: 100%;}
+.clearfixd:after{content: '\20'; display: block; height: 0; clear: both;}
+.clearfixd{*zoom:1; overflow:hidden;}
+.hide{display:none;}
+.nomarginleft{margin-left:0}
+.clear{clear: both;}
+input:focus,select:focus{outline:none;}
+/* 初始化 end */
+
+
+/*头部*/
+.head_wrap{
+	width: 1210px;
+	margin: 0 auto;
+	height: 105px;
+}
+.hw_imgl{
+	float: left;
+	width: 12px;
+	height: 100%;
+	background: url(../images/common/tu_01.jpg) repeat-y;
+}
+.hw_imgr{
+	float: left;
+	width: 12px;
+	height: 100%;
+	background: url(../images/common/tu_07.jpg) repeat-y;
+}
+.head_top{
+	width: 1186px;
+	margin: 0 auto;
+	height: 105px;
+	background: #eee;
+	background: -webkit-linear-gradient(top, #fff, #ebebeb);
+	background: -moz-linear-gradient(top, #fff, #ebebeb);
+	background: -ms-linear-gradient(top, #fff, #ebebeb);
+	background: -o-linear-gradient(top, #fff, #ebebeb);
+	background: linear-gradient(top, #fff, #ebebeb);
+	float: left;
+}
+.ht_logo{
+	width: 50%;
+	height: 105px;
+	float: left;
+}
+.ht_right{
+	float: left;
+	width: 50%;
+}
+.ht_rtop{
+	height: 57px;
+	width: 295px;
+	background: url(../images/common/tu_02.png) no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	padding-left: 35px;
+}
+.ht_rtop span{
+	font-size: 14px;
+	color: #fff;
+	display: inline-block;
+	width: 76px;
+	text-align: center;
+	cursor: pointer;
+	margin: 6px 0;
+	height: 16px;
+	line-height: 16px;
+	border-right: 1px solid #fff;
+}
+.ht_rtop .br_none{
+	border-right: none;
+}
+.ht_rsearch{
+	float: right;
+	width: 262px;
+	height: 30px;
+	margin-right: 27px;
+}
+.ht_txt{
+	width: 200px;
+	height: 28px;
+	border: 1px solid #104095;
+	float: left;
+}
+.ht_sub{
+	width: 60px;
+	height: 30px;
+	border: none;
+	background: #104095;
+	color: #fff;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+}
+.nav_wrap{
+	width: 1210px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.nav_imgl{
+	float: left;
+	width: 38px;
+	height: 38px;
+}
+.nav_box{
+	width: 1133px;
+	height: 38px;
+	background: url(../images/common/tu_05.jpg) repeat-x;
+	background-size: auto 100%;
+	float: left;
+}
+.nw_time{
+	float: left;
+	width: 200px;
+	line-height: 38px;
+	color: #fff;
+	font-size: 12px;
+	margin-left: 20px;
+}
+.nav{
+	width: 912px;
+	float: left;
+}
+.nav li{
+	width: 152px;
+	text-align: center;
+	color: #fff;
+	float: left;
+	font-size: 14px;
+	line-height: 16px;
+	margin-top: 11px;
+	background: url(../images/common/tu_08.jpg) no-repeat;
+	background-position: right center;
+}
+.nav li.bg_none{
+	background: transparent;
+}
+.scroll_wrap{
+	width: 1210px;
+	margin: 0 auto;
+	height: 668px;
+}
+.scroll_box{
+	width: 1186px;
+	float: left;
+}

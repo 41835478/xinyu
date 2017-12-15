@@ -21,7 +21,8 @@
 	<link href="//gd3.alicdn.com" rel="dns-prefetch">
 	<link href="//gd4.alicdn.com" rel="dns-prefetch">
 	<link href="//img.alicdn.com" rel="dns-prefetch">
-	<link rel="stylesheet" type="text/css" href="static/css/my.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="static/css/swiper-3.2.7.min.css">
 	<!-- <link rel="stylesheet" href="static/Font-Awesome-3.2.1/css/bootstrap.min.css">-->	
 	<link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="static/css/<?php echo $index?>.css">
@@ -29,6 +30,7 @@
 	<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
 	<![endif]-->
 	<script src="static/js/header.js"></script>
+	<script src="static/js/swiper-3.4.2.min.js"></script>
 	<?php include($tpl.INCLUDES.'inc.head'.PHP);?>
 </head>
 <body>
